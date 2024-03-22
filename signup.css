@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/bglogin.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 430px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: 30px 40px;
+    padding-bottom: px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.container .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    line-height: 30px; /* Adjust the line height to create space */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 20px; /* Adjust padding to your preference */
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in-out, border-color 0.3s ease-in;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in-out, border-color 0.3s ease-in;
+    appearance: none; /* Remove default arrow in some browsers */
+}
+
+select::-ms-expand {
+    display: none; /* Remove default arrow in Internet Explorer */
+}
+
+/* Set the default color to blank */
+select option {
+    color: #000; /* Black color for picked option */
+}
+
+select:hover,
+select:focus {
+    border-color: #fff;
+}
+
+/* Set the default appearance of the select */
+select option[disabled] {
+    display: none; /* Hide the default option */
+}
+
+/* Set the color for the placeholder text */
+select option[default] {
+    color: transparent; /* Hide default text */
+}
+
+/* Set a background color for the selected option */
+select option:checked {
+    background-color: transparent;
+}
+.input-box input:hover {
+    border-color: #fff; /* Change border color on hover */
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.container .remember-check {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-check label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-check a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-check a:hover {
+    text-decoration: underline;
+}
+
+.container #loginbtn {
+    width: 100%;
+    height: 45px;
+    background: #FE6DB8;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in-out;
+}
+
+
+.container #signupbtn{
+    width: 100%;
+    height: 50px;
+    background: #FE6DB8;
+    border: none;
+    outline: none;
+    margin-top:20px;
+    margin-left: 5px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in-out;
+}
+
+.container #signupbtn:hover {
+    background-color: #fff; 
+    color: black; 
+}
+
+.container .login-form-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.login-form-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-form-link p a:hover{
+    text-decoration: underline;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup Form in HTML and CSS | Denise Sarona</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <form action="reg.php" method="post">
+            <h1>Signup</h1>
+            <div class="input-box">
+                <span>Email</span><input type="email" placeholder="Email" name="email">
+            </div>
+            <div class="input-box">
+                <span>Username</span><input type="text" placeholder="Username" name="username">
+            </div>
+            <div class="input-box">
+                <span>Password</span><input type="password" placeholder="Password" name="password">
+            </div>
+            <div class="input-box">
+                <span>Re-type Password</span><input type="password" placeholder="Re-type Password" name="currentpw">
+            </div>
+
+            <button type="submit" id="signupbtn">Signup</button>
+
+            <div class="login-form-link">
+                <p>Already a member? <a href="login.html">Login</a></p>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
