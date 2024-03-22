@@ -69,10 +69,10 @@ $conn->close();
     //display
     if($login_status === "success"){
         echo '<script>alert("Welcome '.htmlspecialchars($email).'");</script>';
-        echo '<script>window.location.href = "login.html";</script>';
+        echo '<script>window.location.href = "index.html";</script>';
     }elseif($login_status === "error"){
         echo '<script>alert("Invalid email or password");</script>';
-        echo '<script>window.location.href = "login.html";</script>';
+        echo '<script>window.location.href = "index.html";</script>';
     }else{
         echo '<script>alert("Form submission failed");</script>';
     }

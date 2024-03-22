@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if($email_check_sql->num_rows > 0){
             //display error message
             echo '<script>alert("Email already exists");</script';
-            echo '<script>window.location.href = "Login.html";</script>';//back to loginphp
+            echo '<script>window.location.href = "index.html";</script>';//back to loginphp
 
         }else{
             //encyrpt pass
@@ -46,11 +46,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if($conn->query($sql) === TRUE){
                 //display success message
                 echo '<script>alert("New record created successfully");</script>';
-                echo '<script>window.location.href = "login.html";</script>';//redirect to login
+                echo '<script>window.location.href = "index.html";</script>';//redirect to login
             }else{
                 //display error message
                 echo '<script>alert("Error: '. $sql. '\n' . $conn->error. '");</script>';
-                echo '<script>window.location.href ="login.html";</script>';//redorect to login
+                echo '<script>window.location.href ="index.html";</script>';//redorect to login
             }
         }
     }
